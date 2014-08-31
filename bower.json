@@ -1,21 +1,36 @@
 {
-	"name": "angular-template-project",
-	"homepage": "https://github.com/marcorinck/ngStart",
-	"main": "src/main/css/project.css",
-	"ignore": [
-		".jshintrc",
-		"**/*.txt"
-	],
-	"dependencies": {
-		"angular": "1.2.19",
-		"angular-route": "1.2.19",
-		"almond": "0.2.9",
-		"requirejs": "2.1.14",
-		"angular-translate": "1.0.2",
-		"angular-translate-loader-static-files": "0.1.4"
-	},
-	"devDependencies": {
-		"angular-mocks": "1.2.19",
-		"angular-translate-handler-log": "0.1.4"
-	}
+  "name": "ngStart",
+  "homepage": "https://github.com/alertlogic/ngStart",
+  "main": "src/main/",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "almond": "0.2.9",
+    "angular": "1.2.23",
+    "angular-animate": "~1.2.23",
+    "angular-resource": "~1.2.23",
+    "angular-route": "1.2.23",
+    "angular-sanitize": "~1.2.23",
+    "angular-ui-router": "~0.2.10",
+    "angular-ui-utils": "bower",
+    "bootstrap": "~3.1.1",
+    "angular-bootstrap": "0.11.0",
+    "ng-grid": "2.0.12",
+    "requirejs": "2.1.14",
+    "jquery": "~2.1.0",
+    "angular-gettext": "~1.1.0",
+    "angular-local-storage": "git@github.com:grevory/angular-local-storage.git#~0.0.7",
+    "angular-ui-select": "~0.6.0",
+    "d3": "3.4.11",
+    "angularjs-nvd3-directives": "~0.0.7",
+    "angulartics": "0.16.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.23"
+  },
+  "resolutions": {
+    "d3": "~3.4.11"
+  }
 }

@@ -1,49 +1,44 @@
-<!doctype html>
-<!--(if target build)>
-	<html manifest="ngStart.manifest">
-<!(endif)-->
-<!--(if target local)> -->
-<html xmlns="http://www.w3.org/1999/html">
-<!--<!(endif)-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>ngStart</title>
+<meta charset="utf-8" />
+<title>angular_ui_template</title>
 
-	<meta charset="utf-8">
-
-	<!--(if target build)>
-		<link rel="stylesheet" href="css/ngStart.css">
-		<script src="modules/main.js" data-main="main"></script>
-
-	<!(endif)-->
-	<!--(if target local)> -->
-	<!--<script type="text/javascript">parent.uitest && parent.uitest.instrument(window);</script>-->
-	<script src="http://localhost:35729/livereload.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" href="css/project.css">
-	<script src="../../bower_components/requirejs/require.js" data-main="modules/main"></script>
-	<!--<!(endif)-->
+<!-- Default Styles (DO NOT TOUCH) -->
+<link rel="stylesheet" type="text/css" href="/css/app.css">
+<!-- RequireJS // -->
+<script src="/vendor/requirejs/require.js" data-main="main"></script>
 </head>
-<body ng-controller="navbarController">
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-			<a href="#" class="brand">ngStart</a>
-			<div class="nav" >
-				<ul class="nav">
-					<li ng-class="{active: isActive('/about/')}"><a href="#about"><translate>About Page</translate></a></li>
-					<li ng-class="{active: isActive('/contact/')}"><a href="#contact"><translate>Contact Page</translate></a></li>
-				</ul>
+<body>
+	<div class="wrapper">
+		<div class="navbar nav">
+			<div class="container-fluid">
+				
 			</div>
-			<div class="flag flag-de" ng-click="changeLanguage('de')"></div>
-			<div class="flag flag-en" ng-click="changeLanguage('en')"></div>
 		</div>
+		<div class="contain">
+			<!-- BEGIN PAGE CONTENT -->
+			<div class="content"> 
+				<div id="response" class="col-md-12">
+					<div class="rep">
+					</div>
+				</div>
+
+				<div protected-content>
+					<h4>Welcome to angular_ui_template!</h4>
+					<ng-view></ng-view>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT --> 
+		</div>
+        <message-panel />
 	</div>
-</div>
-<div class="container" >
-	<div ng-view></div>
-</div>
 
+	<!-- Default JS (DO NOT TOUCH) --> 
+	<script src="/vendor/jquery/dist/jquery.min.js"></script> 
+	<script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script> 
 
+	<!-- Adjustable JS --> 
+	</script>
 </body>
 </html>
